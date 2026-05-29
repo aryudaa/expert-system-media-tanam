@@ -1,0 +1,87 @@
+const rules = [
+
+	{ id: "R1", tanaman: "Monstera", lokasi: "Indoor", cahaya: "Rendah", media: ["Cocopeat", "Humus"] },
+	{ id: "R2", tanaman: "Monstera", lokasi: "Indoor", cahaya: "Sedang", media: ["Cocopeat", "Perlite"] },
+	{ id: "R3", tanaman: "Monstera", lokasi: "Indoor", cahaya: "Tinggi", media: ["Cocopeat", "Sekam Bakar"] },
+	{ id: "R4", tanaman: "Monstera", lokasi: "Outdoor", cahaya: "Rendah", media: ["Cocopeat", "Moss"] },
+	{ id: "R5", tanaman: "Monstera", lokasi: "Outdoor", cahaya: "Sedang", media: ["Cocopeat", "Perlite"] },
+	{ id: "R6", tanaman: "Monstera", lokasi: "Outdoor", cahaya: "Tinggi", media: ["Sekam Bakar", "Perlite"] },
+
+	{ id: "R7", tanaman: "Aglaonema", lokasi: "Indoor", cahaya: "Rendah", media: ["Humus", "Cocopeat"] },
+	{ id: "R8", tanaman: "Aglaonema", lokasi: "Indoor", cahaya: "Sedang", media: ["Cocopeat", "Sekam Bakar"] },
+	{ id: "R9", tanaman: "Aglaonema", lokasi: "Indoor", cahaya: "Tinggi", media: ["Cocopeat", "Perlite"] },
+	{ id: "R10", tanaman: "Aglaonema", lokasi: "Outdoor", cahaya: "Rendah", media: ["Humus", "Moss"] },
+	{ id: "R11", tanaman: "Aglaonema", lokasi: "Outdoor", cahaya: "Sedang", media: ["Cocopeat", "Sekam Bakar"] },
+	{ id: "R12", tanaman: "Aglaonema", lokasi: "Outdoor", cahaya: "Tinggi", media: ["Sekam Bakar", "Perlite"] },
+
+	{ id: "R13", tanaman: "Lidah Mertua", lokasi: "Indoor", cahaya: "Rendah", media: ["Pasir Malang", "Sekam Bakar"] },
+	{ id: "R14", tanaman: "Lidah Mertua", lokasi: "Indoor", cahaya: "Sedang", media: ["Pasir Malang", "Perlite"] },
+	{ id: "R15", tanaman: "Lidah Mertua", lokasi: "Indoor", cahaya: "Tinggi", media: ["Pasir Malang", "Cocopeat"] },
+	{ id: "R16", tanaman: "Lidah Mertua", lokasi: "Outdoor", cahaya: "Rendah", media: ["Sekam Bakar", "Pasir Malang"] },
+	{ id: "R17", tanaman: "Lidah Mertua", lokasi: "Outdoor", cahaya: "Sedang", media: ["Pasir Malang", "Perlite"] },
+	{ id: "R18", tanaman: "Lidah Mertua", lokasi: "Outdoor", cahaya: "Tinggi", media: ["Pasir Malang", "Sekam Bakar"] },
+
+	{ id: "R19", tanaman: "Sirih Gading", lokasi: "Indoor", cahaya: "Rendah", media: ["Cocopeat", "Humus"] },
+	{ id: "R20", tanaman: "Sirih Gading", lokasi: "Indoor", cahaya: "Sedang", media: ["Cocopeat", "Perlite"] },
+	{ id: "R21", tanaman: "Sirih Gading", lokasi: "Indoor", cahaya: "Tinggi", media: ["Cocopeat", "Sekam Bakar"] },
+	{ id: "R22", tanaman: "Sirih Gading", lokasi: "Outdoor", cahaya: "Rendah", media: ["Cocopeat", "Moss"] },
+	{ id: "R23", tanaman: "Sirih Gading", lokasi: "Outdoor", cahaya: "Sedang", media: ["Cocopeat", "Perlite"] },
+	{ id: "R24", tanaman: "Sirih Gading", lokasi: "Outdoor", cahaya: "Tinggi", media: ["Sekam Bakar", "Perlite"] },
+
+	{ id: "R25", tanaman: "Kaktus", lokasi: "Indoor", cahaya: "Rendah", media: ["Pasir Malang", "Perlite"] },
+	{ id: "R26", tanaman: "Kaktus", lokasi: "Indoor", cahaya: "Sedang", media: ["Pasir Malang", "Sekam Bakar"] },
+	{ id: "R27", tanaman: "Kaktus", lokasi: "Indoor", cahaya: "Tinggi", media: ["Pasir Malang", "Perlite"] },
+	{ id: "R28", tanaman: "Kaktus", lokasi: "Outdoor", cahaya: "Rendah", media: ["Sekam Bakar", "Pasir Malang"] },
+	{ id: "R29", tanaman: "Kaktus", lokasi: "Outdoor", cahaya: "Sedang", media: ["Pasir Malang", "Perlite"] },
+	{ id: "R30", tanaman: "Kaktus", lokasi: "Outdoor", cahaya: "Tinggi", media: ["Pasir Malang", "Sekam Bakar"] },
+
+	{ id: "R31", tanaman: "Sukulen", lokasi: "Indoor", cahaya: "Rendah", media: ["Sekam Bakar", "Perlite"] },
+	{ id: "R32", tanaman: "Sukulen", lokasi: "Indoor", cahaya: "Sedang", media: ["Pasir Malang", "Perlite"] },
+	{ id: "R33", tanaman: "Sukulen", lokasi: "Indoor", cahaya: "Tinggi", media: ["Pasir Malang", "Cocopeat"] },
+	{ id: "R34", tanaman: "Sukulen", lokasi: "Outdoor", cahaya: "Rendah", media: ["Sekam Bakar", "Pasir Malang"] },
+	{ id: "R35", tanaman: "Sukulen", lokasi: "Outdoor", cahaya: "Sedang", media: ["Pasir Malang", "Perlite"] },
+	{ id: "R36", tanaman: "Sukulen", lokasi: "Outdoor", cahaya: "Tinggi", media: ["Pasir Malang", "Sekam Bakar"] },
+
+	{ id: "R37", tanaman: "Anggrek", lokasi: "Indoor", cahaya: "Rendah", media: ["Moss", "Humus"] },
+	{ id: "R38", tanaman: "Anggrek", lokasi: "Indoor", cahaya: "Sedang", media: ["Moss", "Perlite"] },
+	{ id: "R39", tanaman: "Anggrek", lokasi: "Indoor", cahaya: "Tinggi", media: ["Moss", "Sekam Bakar"] },
+	{ id: "R40", tanaman: "Anggrek", lokasi: "Outdoor", cahaya: "Rendah", media: ["Moss", "Cocopeat"] },
+	{ id: "R41", tanaman: "Anggrek", lokasi: "Outdoor", cahaya: "Sedang", media: ["Moss", "Perlite"] },
+	{ id: "R42", tanaman: "Anggrek", lokasi: "Outdoor", cahaya: "Tinggi", media: ["Sekam Bakar", "Moss"] },
+
+	{ id: "R43", tanaman: "Philodendron", lokasi: "Indoor", cahaya: "Rendah", media: ["Cocopeat", "Humus"] },
+	{ id: "R44", tanaman: "Philodendron", lokasi: "Indoor", cahaya: "Sedang", media: ["Cocopeat", "Sekam Bakar"] },
+	{ id: "R45", tanaman: "Philodendron", lokasi: "Indoor", cahaya: "Tinggi", media: ["Cocopeat", "Perlite"] },
+	{ id: "R46", tanaman: "Philodendron", lokasi: "Outdoor", cahaya: "Rendah", media: ["Moss", "Cocopeat"] },
+	{ id: "R47", tanaman: "Philodendron", lokasi: "Outdoor", cahaya: "Sedang", media: ["Cocopeat", "Perlite"] },
+	{ id: "R48", tanaman: "Philodendron", lokasi: "Outdoor", cahaya: "Tinggi", media: ["Sekam Bakar", "Perlite"] },
+
+	{ id: "R49", tanaman: "Calathea", lokasi: "Indoor", cahaya: "Rendah", media: ["Moss", "Cocopeat"] },
+	{ id: "R50", tanaman: "Calathea", lokasi: "Indoor", cahaya: "Sedang", media: ["Cocopeat", "Humus"] },
+	{ id: "R51", tanaman: "Calathea", lokasi: "Indoor", cahaya: "Tinggi", media: ["Cocopeat", "Perlite"] },
+	{ id: "R52", tanaman: "Calathea", lokasi: "Outdoor", cahaya: "Rendah", media: ["Moss", "Humus"] },
+	{ id: "R53", tanaman: "Calathea", lokasi: "Outdoor", cahaya: "Sedang", media: ["Cocopeat", "Moss"] },
+	{ id: "R54", tanaman: "Calathea", lokasi: "Outdoor", cahaya: "Tinggi", media: ["Sekam Bakar", "Cocopeat"] },
+
+	{ id: "R55", tanaman: "Pakis", lokasi: "Indoor", cahaya: "Rendah", media: ["Moss", "Humus"] },
+	{ id: "R56", tanaman: "Pakis", lokasi: "Indoor", cahaya: "Sedang", media: ["Cocopeat", "Moss"] },
+	{ id: "R57", tanaman: "Pakis", lokasi: "Indoor", cahaya: "Tinggi", media: ["Cocopeat", "Perlite"] },
+	{ id: "R58", tanaman: "Pakis", lokasi: "Outdoor", cahaya: "Rendah", media: ["Moss", "Cocopeat"] },
+	{ id: "R59", tanaman: "Pakis", lokasi: "Outdoor", cahaya: "Sedang", media: ["Humus", "Cocopeat"] },
+	{ id: "R60", tanaman: "Pakis", lokasi: "Outdoor", cahaya: "Tinggi", media: ["Sekam Bakar", "Cocopeat"] },
+
+	{ id: "R61", tanaman: "Keladi", lokasi: "Indoor", cahaya: "Rendah", media: ["Moss", "Humus"] },
+	{ id: "R62", tanaman: "Keladi", lokasi: "Indoor", cahaya: "Sedang", media: ["Cocopeat", "Humus"] },
+	{ id: "R63", tanaman: "Keladi", lokasi: "Indoor", cahaya: "Tinggi", media: ["Cocopeat", "Perlite"] },
+	{ id: "R64", tanaman: "Keladi", lokasi: "Outdoor", cahaya: "Rendah", media: ["Moss", "Cocopeat"] },
+	{ id: "R65", tanaman: "Keladi", lokasi: "Outdoor", cahaya: "Sedang", media: ["Cocopeat", "Moss"] },
+	{ id: "R66", tanaman: "Keladi", lokasi: "Outdoor", cahaya: "Tinggi", media: ["Sekam Bakar", "Cocopeat"] },
+
+	{ id: "R67", tanaman: "Peace Lily", lokasi: "Indoor", cahaya: "Rendah", media: ["Cocopeat", "Humus"] },
+	{ id: "R68", tanaman: "Peace Lily", lokasi: "Indoor", cahaya: "Sedang", media: ["Cocopeat", "Moss"] },
+	{ id: "R69", tanaman: "Peace Lily", lokasi: "Indoor", cahaya: "Tinggi", media: ["Cocopeat", "Perlite"] },
+	{ id: "R70", tanaman: "Peace Lily", lokasi: "Outdoor", cahaya: "Rendah", media: ["Moss", "Humus"] },
+	{ id: "R71", tanaman: "Peace Lily", lokasi: "Outdoor", cahaya: "Sedang", media: ["Cocopeat", "Humus"] },
+	{ id: "R72", tanaman: "Peace Lily", lokasi: "Outdoor", cahaya: "Tinggi", media: ["Sekam Bakar", "Cocopeat"] }
+
+];

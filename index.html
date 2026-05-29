@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sistem Pakar Media Tanam</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header>
+			<h1>Sistem Pakar Rekomendasi Media Tanam</h1>
+			<p>Pilih tanaman dan kondisi lingkungan untuk mendapatkan rekomendasi media tanam.</p>
+		</header>
+
+		<section>
+			<h2>Pilih Tanaman</h2>
+
+			<div class="plant-grid">
+				<div class="plant-card" onclick="pilihTanaman('Monstera', this)">
+					<img src="assets/tanaman/monstera.png">
+					<h3>Monstera</h3>
+				</div>
+
+				<div class="plant-card" onclick="pilihTanaman('Aglaonema', this)">
+					<img src="assets/tanaman/aglaonema.png">
+					<h3>Aglaonema</h3>
+				</div>
+
+				<div class="plant-card" onclick="pilihTanaman('Lidah Mertua', this)">
+					<img src="assets/tanaman/lidahMertua.png">
+					<h3>Lidah Mertua</h3>
+				</div>
+
+				<div class="plant-card" onclick="pilihTanaman('Sirih Gading', this)">
+					<img src="assets/tanaman/sirihGading.png">
+					<h3>Sirih Gading</h3>
+				</div>
+
+				<div class="plant-card" onclick="pilihTanaman('Kaktus', this)">
+					<img src="assets/tanaman/kaktus.png">
+					<h3>Kaktus</h3>
+				</div>
+
+				<div class="plant-card" onclick="pilihTanaman('Sukulen', this)">
+					<img src="assets/tanaman/sukulen.png">
+					<h3>Sukulen</h3>
+				</div>
+
+				<div class="plant-card" onclick="pilihTanaman('Anggrek', this)">
+					<img src="assets/tanaman/anggrek.png">
+					<h3>Anggrek</h3>
+				</div>
+
+				<div class="plant-card" onclick="pilihTanaman('Philodendron', this)">
+					<img src="assets/tanaman/philodendron.png">
+					<h3>Philodendron</h3>
+				</div>
+
+				<div class="plant-card" onclick="pilihTanaman('Calathea', this)">
+					<img src="assets/tanaman/calathea.png">
+					<h3>Calathea</h3>
+				</div>
+
+				<div class="plant-card" onclick="pilihTanaman('Pakis', this)">
+					<img src="assets/tanaman/pakis.png">
+					<h3>Pakis</h3>
+				</div>
+
+				<div class="plant-card" onclick="pilihTanaman('Keladi', this)">
+					<img src="assets/tanaman/keladi.png">
+					<h3>Keladi</h3>
+				</div>
+
+				<div class="plant-card" onclick="pilihTanaman('Peace Lily', this)">
+					<img src="assets/tanaman/peaceLily.png">
+					<h3>Peace Lily</h3>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="form-section">
+			<h2>Pengaturan Lingkungan</h2>
+
+			<div class="input-group">
+				<h3>Lokasi Penempatan</h3>
+				<div class="choice-grid lokasi-grid">
+					<div class="choice-card" onclick="pilihLokasi('Indoor', this)">
+						<h4>Indoor</h4>
+						<p>Dalam rumah</p>
+					</div>
+
+					<div class="choice-card" onclick="pilihLokasi('Outdoor', this)">
+						<h4>Outdoor</h4>
+						<p>Luar rumah</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="input-group">
+				<h3>Intensitas Cahaya</h3>
+				<div class="choice-grid cahaya-grid">
+					<div class="choice-card" onclick="pilihCahaya('Rendah', this)">
+						<h4>Rendah</h4>
+						<p>Minim cahaya</p>
+					</div>
+
+					<div class="choice-card" onclick="pilihCahaya('Sedang', this)">
+						<h4>Sedang</h4>
+						<p>Cahaya cukup</p>
+					</div>
+
+					<div class="choice-card" onclick="pilihCahaya('Tinggi', this)">
+						<h4>Tinggi</h4>
+						<p>Sangat terang</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="button-wrapper">
+				<button onclick="cariRekomendasi()">Cari</button>
+			</div>
+
+		</section>
+
+		<section id="hasil"></section>
+
+		<script src="data/tanamanInfo.js"></script>
+		<script src="data/mediaInfo.js"></script>
+		<script src="data/rules.js"></script>
+		<script src="script.js"></script>
+
+	</body>
+</html>
