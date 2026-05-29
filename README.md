@@ -49,7 +49,7 @@ Sistem menggunakan:
 
 ## Cara Menjalankan
 
-1. Buka lini https://aryudaa.github.io/expert-system-media-tanam/
+1. Buka link https://aryudaa.github.io/expert-system-media-tanam/
 2. Pilih tanaman
 3. Pilih kondisi lingkungan
 4. Klik tombol Cari
