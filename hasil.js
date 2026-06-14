@@ -95,4 +95,4 @@ else {
 	`;
 }
 
-// sessionStorage.removeItem("hasilRule");
+sessionStorage.removeItem("hasilRule");
