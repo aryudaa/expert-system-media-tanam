@@ -1,6 +1,6 @@
 # Sistem Pakar Rekomendasi Media Tanam
 
-Website sistem pakar berbasis rule IF-THEN untuk merekomendasikan media tanam yang sesuai berdasarkan jenis tanaman, lokasi penempatan, dan intensitas cahaya.
+Website sistem pakar berbasis rule IF-THEN untuk merekomendasikan media tanam yang sesuai berdasarkan jenis tanaman dan intensitas cahaya, serta evaluasi berdasarkan lokasi penempatan tanaman.
 
 ## Tentang Project
 
@@ -14,6 +14,8 @@ Sistem menggunakan pendekatan rule-based expert system dengan inference engine m
 * Pemilihan lokasi penempatan
 * Pemilihan intensitas cahaya
 * Sistem inferensi berbasis IF-THEN
+* Info tanaman dan karakteristiknya
+* Evaluasi lokasi penempatan
 * Hasil rekomendasi media tanam
 * Penjelasan media tanam terpilih
 
@@ -30,6 +32,7 @@ Sistem menerima 3 input utama:
 Sistem memberikan:
 
 * karakteristik tanaman
+* evaluasi lokasi
 * rekomendasi media tanam dan penjelasannya
 
 ## Teknologi yang Digunakan
@@ -45,7 +48,7 @@ Sistem menggunakan:
 
 * 12 jenis tanaman
 * 6 media tanam
-* 72 rules IF-THEN
+* 36 + 24 rules IF-THEN
 
 ## Cara Menjalankan
 
