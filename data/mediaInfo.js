@@ -3,49 +3,55 @@ const mediaInfo = {
 	"Cocopeat": {
 		id: "cocopeat",
 		deskripsi: "Media tanam organik dari serbuk sabut kelapa yang ramah lingkungan",
-		fungsi: "Menyimpan kelembapan dengan baik",
-		kelebihan: "Ringan dan mampu menahan air",
-		cocok: "Tanaman indoor dan tanaman lembap"
+		karakteristik: "Menjaga kelembapan media secara stabil sehingga cocok untuk tanaman yang membutuhkan ketersediaan air yang konsisten",
+		retensi: "Tinggi",
+		aerasi: "Sedang",
+		nutrisi: "Rendah"
 	},
 
 	"Perlite": {
 		id: "perlite",
-		deskripsi: "Media tanam hidroponik dari batuan silika yang dipanaskan pada suhu tinggi",
-		fungsi: "Meningkatkan aerasi dan drainase",
-		kelebihan: "Membantu akar mendapatkan oksigen",
-		cocok: "Tanaman yang tidak tahan genangan"
+		deskripsi: "Media tanam anorganik dari batuan vulkanik yang dipanaskan hingga mengembang",
+		karakteristik: "Meningkatkan aerasi akar dan mempercepat pengeluaran kelebihan air sehingga cocok untuk tanaman yang rentan terhadap pembusukan akar",
+		retensi: "Rendah",
+		aerasi: "Sangat Tinggi",
+		nutrisi: "Rendah"
 	},
 
 	"Sekam Bakar": {
 		id: "sekamBakar",
-		deskripsi: "Media tanam organik dari kulit padi mentah yang mengalami proses pembakaran",
-		fungsi: "Membantu sirkulasi udara pada media",
-		kelebihan: "Ringan dan tidak mudah memadat",
-		cocok: "Campuran media tanaman hias"
-	},
-
-	"Pasir Malang": {
-		id: "pasirMalang",
-		deskripsi: "Media tanam vulkanik dari endapan lahar atau magma gunung berapi yang mendingin",
-		fungsi: "Mempercepat pembuangan air",
-		kelebihan: "Mencegah akar terlalu lembap",
-		cocok: "Kaktus dan sukulen"
-	},
-
-	"Moss": {
-		id: "moss",
-		deskripsi: "Media tanam organik dari lumut atau paku-pakuan",
-		fungsi: "Menjaga kelembapan pada media",
-		kelebihan: "Mampu menyimpan air lebih lama",
-		cocok: "Anggrek dan tanaman lembap"
+		deskripsi: "Media tanam organik dari kulit padi yang dibakar secara terkendali hingga menjadi arang sekam",
+		karakteristik: "Meningkatkan porositas media dan menjaga sirkulasi udara di sekitar akar sehingga mendukung pertumbuhan akar yang sehat",
+		retensi: "Rendah-Sedang",
+		aerasi: "Tinggi",
+		nutrisi: "Rendah"
 	},
 
 	"Humus": {
 		id: "humus",
 		deskripsi: "Media tanam dari pelapukan sisa-sisa organik yang diuraikan oleh mikroorganisme",
-		fungsi: "Menyediakan unsur hara alami",
-		kelebihan: "Membantu pertumbuhan tanaman",
-		cocok: "Tanaman yang membutuhkan nutrisi tinggi"
-	}
+		karakteristik: "Menyediakan unsur hara dan bahan organik yang mendukung pertumbuhan vegetatif tanaman",
+		retensi: "Sedang-Tinggi",
+		aerasi: "Rendah-Sedang",
+		nutrisi: "Tinggi"
+	},
+
+	"Sphagnum Moss": {
+		id: "moss",
+		deskripsi: "Media tanam organik dari akumulasi tanaman lumut Sphagnum yang tumbuh dan membusuk di rawa-rawa gambut",
+		karakteristik: "Mempertahankan kelembapan dalam jangka waktu lebih lama sehingga cocok untuk tanaman yang membutuhkan lingkungan lembap",
+		retensi: "Sangat Tinggi",
+		aerasi: "Sedang",
+		nutrisi: "Rendah"
+	},
+
+	"Vermiculite": {
+		id: "vermiculite",
+		deskripsi: "Media tanam dari mineral alami yang dipanaskan hingga mengembang menjadi serpihan steril yang sangat ringan",
+		karakteristik: "Menyimpan air dan unsur hara sekaligus mempertahankan struktur media yang ringan dan stabil",
+		retensi: "Tinggi",
+		aerasi: "Sedang",
+		nutrisi: "Sedang"
+	},
 	
 };
