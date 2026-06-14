@@ -47,17 +47,27 @@ function pilihCahaya(cahaya, element) {
 }
 
 function cariRekomendasi() {
-	const hasil = rules.find(rule =>
+	const hasilRule = rules.find(rule =>
 		rule.tanaman === selectedPlant &&
-		rule.lokasi === selectedLokasi &&
 		rule.cahaya === selectedCahaya
 	);
 
-	if (!hasil) {
+	const hasilEval = evaluation.find(evaluasi =>
+		evaluasi.tanaman === selectedPlant &&
+		evaluasi.lokasi === selectedLokasi
+	);
+
+	if (!hasilRule) {
 		alert("Silakan lengkapi pilihan terlebih dahulu.");
 		return;
 	}
 
-	sessionStorage.setItem("hasilRule", JSON.stringify(hasil));
+	if (!hasilEval) {
+		alert("Silakan lengkapi pilihan terlebih dahulu.");
+		return;
+	}
+
+	sessionStorage.setItem("hasilRule", JSON.stringify(hasilRule));
+	sessionStorage.setItem("hasilEval", JSON.stringify(hasilEval));
 	window.location.href = "hasil.html";
 }

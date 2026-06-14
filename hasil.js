@@ -1,7 +1,8 @@
-const hasil = JSON.parse(sessionStorage.getItem("hasilRule"));
+const hasilRule = JSON.parse(sessionStorage.getItem("hasilRule"));
+const hasilEval = JSON.parse(sessionStorage.getItem("hasilEval"));
 const container = document.getElementById("hasil-container");
 
-if (!hasil) {
+if (!hasilRule) {
 	container.innerHTML = `
 		<div class="result-card">
 			<h2>Data Tidak Ditemukan</h2>
@@ -17,26 +18,22 @@ if (!hasil) {
 }
 
 else {
-	const infoTanaman = tanamanInfo[hasil.tanaman];
+	const infoTanaman = tanamanInfo[hasilRule.tanaman];
 	let mediaHTML = "";
 	let alasanHTML = "";
 
-	hasil.media.forEach(media => {
+	hasilRule.media.forEach(media => {
 		mediaHTML += `
 			<div class="media-card">
 				<h3>${media}</h3>
 				<img src="assets/media/${mediaInfo[media].id}.png" class="media-image">
-				<p>
-					${mediaInfo[media].deskripsi}. 
-					Dapat ${mediaInfo[media].fungsi.toLowerCase()}. 
-					Cocok untuk ${mediaInfo[media].cocok.toLowerCase()}.
-				</p>
+				<p>${mediaInfo[media].deskripsi}.</p>
 			</div>
 		`;
 
 		alasanHTML += `
-			<li>
-				<strong>${media}</strong> dipilih karena ${mediaInfo[media].kelebihan.toLowerCase()}
+			<li style="margin-bottom:8px">
+				<strong>${media}</strong> dipilih karena mampu ${mediaInfo[media].karakteristik.toLowerCase()}
 			</li>
 		`;
 
@@ -45,9 +42,9 @@ else {
 	container.innerHTML = `
 		<div class="result-card fade-in">
 			<div class="desc-tanaman">
-				<h2>${hasil.tanaman}</h2>
+				<h2>${hasilRule.tanaman}</h2>
 				<img src="assets/tanaman/${infoTanaman.id}.png" class="hasil-image" alt="${infoTanaman.id}">
-
+				
 				<table class="desc-table">
 					<tr>
 						<th>Lokasi Penempatan</th>
@@ -55,36 +52,27 @@ else {
 					</tr>
 
 					<tr>
-						<td>${hasil.lokasi}</td>
-						<td>${hasil.cahaya}</td>
+						<td>${hasilEval.lokasi}</td>
+						<td>${hasilRule.cahaya}</td>
 					</tr>
 
 				</table>
+
+				<p style="padding-left:10px; padding-right:10px;">
+					${infoTanaman.deskripsi} Tanaman ${hasilRule.tanaman.toLowerCase()} disarankan untuk 
+					diletakkan di lokasi <b>${infoTanaman.lokasi.toLowerCase()}</b> dengan <b>kelembapan
+					${infoTanaman.kelembapan.toLowerCase()}</b>. Tanaman ini membutuhkan media tanam
+					dengan <b>aerasi ${infoTanaman.aerasi.toLowerCase()}</b> dan 
+					<b>nutrisi ${infoTanaman.nutrisi.toLowerCase()}</b>.
+				</p>
 			</div>
 
 			<hr>
 
-			<h3>Informasi Tanaman</h3>
-
-			<table class="info-table">
-				<tr>
-					<td class="left-table">Karakter</td>
-					<td>: </td>
-					<td>${infoTanaman.karakter}</td>
-				</tr>
-
-				<tr>
-					<td class="left-table">Kebutuhan</td>
-					<td>: </td>
-					<td>${infoTanaman.kebutuhan}</td>
-				</tr>
-
-				<tr>
-					<td class="left-table">Lokasi Ideal</td>
-					<td>: </td>
-					<td>${infoTanaman.cocok}</td>
-				</tr>
-			</table>
+			<h3>Evaluasi Lokasi</h3>
+			<div class="evaluation">
+			<p>${hasilEval.evaluasi}</p>
+			</div>
 
 			<hr>
 
@@ -96,7 +84,7 @@ else {
 			<hr>
 
 			<h3>Mengapa Media Ini Dipilih?</h3>
-			<ul>${alasanHTML}</ul>
+			<ul class="alasan-media">${alasanHTML}</ul>
 
 			<a href="index.html">
 				<div class="button-wrapper">
@@ -107,4 +95,4 @@ else {
 	`;
 }
 
-sessionStorage.removeItem("hasilRule");
+// sessionStorage.removeItem("hasilRule");

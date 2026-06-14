@@ -46,24 +46,6 @@ button:hover {
   gap: 30px;
 }
 
-@media (max-width: 992px) {
-	.plant-grid {
-		grid-template-columns: repeat(3, 1fr);
-	}
-	body {
-		padding: 30px;
-	}
-}
-
-@media (max-width: 700px) {
-	.plant-grid {
-		grid-template-columns: repeat(2, 1fr);
-	}
-	body {
-		padding: 20px;
-	}
-}
-
 .plant-card {
 	height: 100%;
 	background: white;
@@ -193,9 +175,11 @@ button:hover {
 }
 
 .desc-tanaman {
+  line-height: 1.8;
+  text-align: justify;
 	display: grid;
   place-items: center;
-  text-align: center;
+  margin-bottom: -15px;
 }
 
 .desc-tanaman h2, .desc-tanaman img, .desc-tanaman .desc-table{
@@ -204,10 +188,11 @@ button:hover {
 }
 
 .desc-table {
-	width: 100%;
+	text-align: center;
+	width: 50%;
 }
 
-table, th, td {
+table, th, tr, td {
 	border: 1px solid black;
 	border-collapse: collapse;
 }
@@ -231,11 +216,19 @@ table, th, td {
 }
 
 .info-table .left-table {
-	width: 30%;
+	width: 100px;
+	place-items: strecth left;
 }
 
 .info-table td {
 	padding-bottom: 10px;
+}
+
+.evaluation {
+	padding-left:10px;
+	padding-right:10px;
+	line-height: 1.8;
+  text-align: justify;
 }
 
 .media-grid {
@@ -272,6 +265,12 @@ table, th, td {
   line-height: 1.5;
 }
 
+.alasan-media {
+	line-height: 1.8;
+	text-align: justify;
+	padding-right: 20px;
+}
+
 .fade-in {
 	animation: fadeIn 0.5s ease;
 }
@@ -288,8 +287,29 @@ table, th, td {
 	}
 }
 
+@media (max-width: 992px) {
+	.plant-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.desc-table {
+		width: 75%;
+	}
+	body {
+		padding: 30px;
+	}
+}
+
 @media (max-width: 700px) {
+	.plant-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.desc-table {
+		width: 100%;
+	}
 	.media-grid {
 		grid-template-columns: 1fr;
+	}
+	body {
+		padding: 20px;
 	}
 }
