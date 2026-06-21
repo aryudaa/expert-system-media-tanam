@@ -8,9 +8,9 @@ const rules = [
 	{ id: 'R5', tanaman: 'Aglaonema', cahaya: 'Sedang', media: ['Cocopeat', 'Humus'] },
 	{ id: 'R6', tanaman: 'Aglaonema', cahaya: 'Tinggi', media: ['Cocopeat', 'Sphagnum Moss'] },
 
-	{ id: 'R7', tanaman: 'Lidah Mertua', cahaya: 'Rendah', media: ['Perlite', 'Sekam Bakar'] },
-	{ id: 'R8', tanaman: 'Lidah Mertua', cahaya: 'Sedang', media: ['Perlite', 'Vermiculite'] },
-	{ id: 'R9', tanaman: 'Lidah Mertua', cahaya: 'Tinggi', media: ['Sekam Bakar', 'Vermiculite'] },
+	{ id: 'R7', tanaman: 'Lidah Mertua', cahaya: 'Rendah', media: ['Cocopeat', 'Perlite'] },
+	{ id: 'R8', tanaman: 'Lidah Mertua', cahaya: 'Sedang', media: ['Perlite', 'Sekam Bakar'] },
+	{ id: 'R9', tanaman: 'Lidah Mertua', cahaya: 'Tinggi', media: ['Perlite', 'Sekam Bakar'] },
 
 	{ id: 'R10', tanaman: 'Sirih Gading', cahaya: 'Rendah', media: ['Cocopeat', 'Vermiculite'] },
 	{ id: 'R11', tanaman: 'Sirih Gading', cahaya: 'Sedang', media: ['Cocopeat', 'Perlite'] },
@@ -45,7 +45,7 @@ const rules = [
 	{ id: 'R33', tanaman: 'Keladi', cahaya: 'Tinggi', media: ['Humus', 'Sphagnum Moss'] },
 
 	{ id: 'R34', tanaman: 'Peace Lily', cahaya: 'Rendah', media: ['Cocopeat', 'Vermiculite'] },
-	{ id: 'R35', tanaman: 'Peace Lily', cahaya: 'Sedang', media: ['Cocopeat', 'Humus'] },
-	{ id: 'R36', tanaman: 'Peace Lily', cahaya: 'Tinggi', media: ['Cocopeat', 'Sphagnum Moss'] },
+	{ id: 'R35', tanaman: 'Peace Lily', cahaya: 'Sedang', media: ['Cocopeat', 'Perlite'] },
+	{ id: 'R36', tanaman: 'Peace Lily', cahaya: 'Tinggi', media: ['Cocopeat', 'Perlite'] },
 
 ];
