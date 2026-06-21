@@ -22,7 +22,7 @@ const tanamanInfo = {
 		id: 'lidahMertua',
 		deskripsi: 'Tanaman sukulen yang tahan kekeringan, memiliki daun tegak berbentuk pedang, dan cocok untuk pemula.',
 		lokasi: 'Indoor/Outdoor',
-		kelembapan: 'Rendah',
+		kelembapan: 'Sedang',
 		aerasi: 'Tinggi',
 		nutrisi: 'Rendah'
 	},
@@ -103,7 +103,7 @@ const tanamanInfo = {
 		id: 'peaceLily',
 		deskripsi: 'Tanaman hias berbunga yang toleran terhadap cahaya rendah dan dikenal memiliki bunga berwarna putih khas.',
 		lokasi: 'Indoor',
-		kelembapan: 'Tinggi',
+		kelembapan: 'Sedang',
 		aerasi: 'Sedang',
 		nutrisi: 'Sedang'
 	},
